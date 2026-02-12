@@ -40,8 +40,42 @@ const employeedata = {
     isfulltime: false,
 }
 
-console.log(employeedata.name); // susan
-console.log(employeedata.id); // 1001   
-console.log(employeedata.age); // 30
-console.log(employeedata.department); // software development
-console.log(employeedata.isfulltime); // false
+// console.log(employeedata.name); // susan
+// console.log(employeedata.id); // 1001   
+// console.log(employeedata.age); // 30
+// console.log(employeedata.department); // software development
+// console.log(employeedata.isfulltime); // false
+
+// for(const key in employeedata){
+//     console.log(key);
+//     console.log(employeedata[key]);
+// }
+
+
+// array of object
+const videos = [
+    {
+        title: "javascript tutorial",
+        views: "1000",
+        duration: "10 minutes", 
+
+    },
+    {
+        title: "html tutorial",
+        views: "500k",
+        duration: "15 minutes", 
+
+    },
+    {
+        title: "css tutorial",
+        views: "800k",
+        duration: "20 minutes", 
+
+    }
+]
+
+for (const key in videos) {
+    console.log("\n" + videos[key].title);
+    console.log(videos[key].views);
+    console.log(videos[key].duration);
+}
