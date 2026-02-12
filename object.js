@@ -1,7 +1,7 @@
 const studentdata = {
     name: "dipsan",
     age: 18,
-    address: manigram,
+    address: "manigram",
 };
 
 // Accessing properties
