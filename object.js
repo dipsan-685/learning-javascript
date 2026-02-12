@@ -28,3 +28,18 @@ console.log(studentdata.workdays[2]); // 3
 
 studentdata.changename("dipsan");
 console.log(studentdata.name);  
+
+
+// emploey details
+
+const employeedata = {
+    name: "susan",
+    age: 30,
+    department: "software development",
+    isfulltime: false,
+}
+
+console.log(employeedata.name); // susan
+console.log(employeedata.age); // 30
+console.log(employeedata.department); // HR
+console.log(employeedata.isfulltime); // true
