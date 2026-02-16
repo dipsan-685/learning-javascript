@@ -56,8 +56,7 @@ const name = n.map(function (n) {
     return n.toUpperCase(); 
 
 });
-console.log(name); // ["JOHN", "DOE", "SMITH", "JANE"]
-
+console.log(name);
 
 // filter out the product whose price is less then 1000
 const products = [
