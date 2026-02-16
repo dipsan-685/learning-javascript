@@ -22,3 +22,21 @@ function user(call) {
 }
 
 user(greet); 
+
+//create a hof function called calculate and perform operaation 
+//based on callback function
+
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+function add(x, y) {
+    return x + y;
+}
+
+const subtract = (x,y)=> x-y;
+
+
+console.log(calculate(10, 5, add)); 
+console.log(calculate(10, 5, subtract));
+
