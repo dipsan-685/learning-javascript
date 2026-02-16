@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
 </head>
+
 <body>
 
     <div id="p1">hello</div>
-    
+    <button onclick="changeText()">Click me</button>
+    <button onclick="changeText()">Click me</button>
+
+    <button onclick="resetText()">Reset</button>
+    <a href="" name="myLink"></a>
+
 
     <script>
         document.body.style.backgroundColor = "rgb(190, 227, 237)";
         let ele = document.getElementById("p1");
-        
+
         ele.style.color = "red";
         ele.style.fontSize = "30px";
-        debugger;
         ele.innerText = "hello world";
+        document.getElementsByTagName("button");
+        document.getElementsByTagName("a")[0].innerText = "git";
+        document.getElementsByName("myLink")[0].href = "https://github.com/dipsan-685/learning-javascript";
+
     </script>
 </body>
+
 </html>
