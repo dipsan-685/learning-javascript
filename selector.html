@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">select element by id</h1>
+    <h3>Select element by nametag</h3>
+    <h2 class="subheading">select element by class</h2>
+
+</body>
+
+<script>
+   let result = document.getElementById("heading");
+   console.log(result);
+
+   document.getElementById("heading").style.color = "red";
+   document.getElementsByClassName("subheading")[0].style.color = "blue";
+   document.getElementsByTagName("h3")[0].style.color = "green";
+</Script>
+</html>
