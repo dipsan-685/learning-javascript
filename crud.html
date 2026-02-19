@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        root{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: #d4f6f7;
+            padding: 20px;
+        }
+        .thumbnail{
+            width: 200px;
+            height: 150px;
+            background-color: #000000;
+            margin-bottom: 10px;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>My Todo List</h1>
+    <p id="todo"></p>
+
+</body>
+<script>
+    let todos = [
+        {
+            id: 1,
+            title: "Learning java script",
+            views: "200M",
+            channelname: "Code with harry",
+            posted: "2 days ago",
+        },
+        {
+            id: 2,
+            title: "Learning java script",
+            views: "200K",
+            channelname: "Samir Sanga Code",
+            posted: "2 hours ago",
+        },
+        {
+            id: 3,
+            title: "Learning java script",
+            views: "20M",
+            channelname: "Bishow Sanga Code",
+            posted: "1 year ago",
+        },
+        {
+            id: 4,
+            title: "Learning java script",
+            views: "2 B",
+            channelname: "Dipsan Sanga Code",
+            posted: "2 days ago",
+        }
+
+    ];
+    let todoelement = document.querySelector("#todo");
+    let html = "";
+    todos.forEach(function (todo) {
+        html += `<div class="thumbnail">
+        <img src="${todo.thumbnail}" alt="thumbnail">
+        </div>
+            <div class="content">
+        <h3>${todo.title}</h3>
+        <p>Views: ${todo.views}</p>
+        <p>Channel Name: ${todo.channelname}</p>
+        <p>Posted: ${todo.posted}</p>
+        </div>`;
+    });
+    todoelement.innerHTML = html;
+
+
+</script>
+
+</html>

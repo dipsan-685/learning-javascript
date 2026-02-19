@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Event Handling in JavaScript</h3>
+    <p id="data"></p>
+    <button id="myButton">Click Me!</button>
+
+</body>
+
+<script>
+    let btnelement = document.querySelector("#myButton");
+
+    btnelement.addEventListener("click", function() {
+        data.textContent = "Button was clicked!";
+    });
+
+    
+</script>
+
+</html>
