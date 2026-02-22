@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        root {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: #e5f8f9;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #bg {
+            background-color: #ffffff;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            display: flex;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        #left {
+            background-image: url("https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9naW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+            height: 100%;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        #right {
+            width: 50%;
+            height: 100%;
+            padding: 40px;
+        }
+        .input-box {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .input-box label {
+            margin-right: 10px;
+            color: #888;
+        }
+        .input-box input {
+            border: none;
+            outline: none;
+            padding: 10px;
+        }
+        .input-box button {
+            width: 100%;
+            padding: 10px;      
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .input-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg">
+        <div id="left"></div>
+        <div id="right" style="padding: 20px;">
+            <h2><b>Login</b></h2>
+<form id="form">
+            <div class="input-box">
+                <label for="Name" id="name">Name:</label>
+                <input type="text" id="Name" name="Name"><br><br>
+            </div>
+            <div class="input-box">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+            </div>
+            <div class="input-box">
+                <label for="checkbox">Remember me:</label>
+                <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+            </div>
+
+            <div class="input-box">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+</form>
+</body>
+<script>
+    const form = document.getElementById("form");
+    const nameInput = document.getElementById("Name");
+    const passwordInput = document.getElementById("password");
+    const checkboxInput = document.getElementById("checkbox");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = nameInput.value.trim();
+        const password = passwordInput.value.trim();
+        debugger
+        const rememberMe = checkboxInput.checked.trim();
+
+        console.log("Name:", name);
+        console.log("Password:", password);
+        console.log("Remember Me:", rememberMe);
+    });
+
+
+</script>
+
+</html>
